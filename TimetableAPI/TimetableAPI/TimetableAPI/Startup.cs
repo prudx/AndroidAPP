@@ -32,7 +32,7 @@ namespace TimetableAPI
 
             services.AddDbContext<TimetableAPIContext>(options =>
                     options.UseSqlServer(Configuration.GetConnectionString("DefalutConnection")));
-            services.BuildServiceProvider().GetService<TimetableAPIContext>().Database.Migrate();
+            //services.BuildServiceProvider().GetService<TimetableAPIContext>().Database.Migrate();
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new Info { Title = "TImetable API", Version = "v1" });
