@@ -12647,11 +12647,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\anesr\\source\\repos\\c#Labs\\CA2\\TimetableAPI\\TimetableAPI\\TimetableAPI\\TimetableAPI.csproj",
+      "projectUniqueName": "C:\\Users\\anesr\\source\\repos\\c#Labs\\CA2\\AndroidAPP\\TimetableAPI\\TimetableAPI\\TimetableAPI\\TimetableAPI.csproj",
       "projectName": "TimetableAPI",
-      "projectPath": "C:\\Users\\anesr\\source\\repos\\c#Labs\\CA2\\TimetableAPI\\TimetableAPI\\TimetableAPI\\TimetableAPI.csproj",
+      "projectPath": "C:\\Users\\anesr\\source\\repos\\c#Labs\\CA2\\AndroidAPP\\TimetableAPI\\TimetableAPI\\TimetableAPI\\TimetableAPI.csproj",
       "packagesPath": "C:\\Users\\anesr\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\anesr\\source\\repos\\c#Labs\\CA2\\TimetableAPI\\TimetableAPI\\TimetableAPI\\obj\\",
+      "outputPath": "C:\\Users\\anesr\\source\\repos\\c#Labs\\CA2\\AndroidAPP\\TimetableAPI\\TimetableAPI\\TimetableAPI\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

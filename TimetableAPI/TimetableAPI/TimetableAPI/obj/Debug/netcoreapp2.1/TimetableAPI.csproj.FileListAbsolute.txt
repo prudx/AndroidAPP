@@ -14,3 +14,17 @@ C:\Users\anesr\source\repos\c#Labs\CA2\TimetableAPI\TimetableAPI\TimetableAPI\ob
 C:\Users\anesr\source\repos\c#Labs\CA2\TimetableAPI\TimetableAPI\TimetableAPI\obj\Debug\netcoreapp2.1\TimetableAPI.pdb
 C:\Users\anesr\source\repos\c#Labs\CA2\ENT%20DEV%20CA2\TimetableAPI\TimetableAPI\TimetableAPI\obj\Debug\netcoreapp2.1\TimetableAPI.dll
 C:\Users\anesr\source\repos\c#Labs\CA2\ENT%20DEV%20CA2\TimetableAPI\TimetableAPI\TimetableAPI\obj\Debug\netcoreapp2.1\TimetableAPI.pdb
+C:\Users\anesr\source\repos\c#Labs\CA2\AndroidAPP\TimetableAPI\TimetableAPI\TimetableAPI\bin\Debug\netcoreapp2.1\TimetableAPI.deps.json
+C:\Users\anesr\source\repos\c#Labs\CA2\AndroidAPP\TimetableAPI\TimetableAPI\TimetableAPI\bin\Debug\netcoreapp2.1\TimetableAPI.runtimeconfig.json
+C:\Users\anesr\source\repos\c#Labs\CA2\AndroidAPP\TimetableAPI\TimetableAPI\TimetableAPI\bin\Debug\netcoreapp2.1\TimetableAPI.runtimeconfig.dev.json
+C:\Users\anesr\source\repos\c#Labs\CA2\AndroidAPP\TimetableAPI\TimetableAPI\TimetableAPI\bin\Debug\netcoreapp2.1\TimetableAPI.dll
+C:\Users\anesr\source\repos\c#Labs\CA2\AndroidAPP\TimetableAPI\TimetableAPI\TimetableAPI\bin\Debug\netcoreapp2.1\TimetableAPI.pdb
+C:\Users\anesr\source\repos\c#Labs\CA2\AndroidAPP\TimetableAPI\TimetableAPI\TimetableAPI\obj\Debug\netcoreapp2.1\TimetableAPI.csprojAssemblyReference.cache
+C:\Users\anesr\source\repos\c#Labs\CA2\AndroidAPP\TimetableAPI\TimetableAPI\TimetableAPI\obj\Debug\netcoreapp2.1\TimetableAPI.csproj.CoreCompileInputs.cache
+C:\Users\anesr\source\repos\c#Labs\CA2\AndroidAPP\TimetableAPI\TimetableAPI\TimetableAPI\obj\Debug\netcoreapp2.1\TimetableAPI.RazorAssemblyInfo.cache
+C:\Users\anesr\source\repos\c#Labs\CA2\AndroidAPP\TimetableAPI\TimetableAPI\TimetableAPI\obj\Debug\netcoreapp2.1\TimetableAPI.RazorAssemblyInfo.cs
+C:\Users\anesr\source\repos\c#Labs\CA2\AndroidAPP\TimetableAPI\TimetableAPI\TimetableAPI\obj\Debug\netcoreapp2.1\TimetableAPI.AssemblyInfoInputs.cache
+C:\Users\anesr\source\repos\c#Labs\CA2\AndroidAPP\TimetableAPI\TimetableAPI\TimetableAPI\obj\Debug\netcoreapp2.1\TimetableAPI.AssemblyInfo.cs
+C:\Users\anesr\source\repos\c#Labs\CA2\AndroidAPP\TimetableAPI\TimetableAPI\TimetableAPI\obj\Debug\netcoreapp2.1\TimetableAPI.RazorTargetAssemblyInfo.cache
+C:\Users\anesr\source\repos\c#Labs\CA2\AndroidAPP\TimetableAPI\TimetableAPI\TimetableAPI\obj\Debug\netcoreapp2.1\TimetableAPI.dll
+C:\Users\anesr\source\repos\c#Labs\CA2\AndroidAPP\TimetableAPI\TimetableAPI\TimetableAPI\obj\Debug\netcoreapp2.1\TimetableAPI.pdb

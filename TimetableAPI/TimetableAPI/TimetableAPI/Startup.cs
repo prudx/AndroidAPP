@@ -31,7 +31,7 @@ namespace TimetableAPI
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
 
             services.AddDbContext<TimetableAPIContext>(options =>
-                    options.UseSqlServer(Configuration.GetConnectionString("TimetableAPIContext")));
+                    options.UseSqlServer(Configuration.GetConnectionString("DefalutConnection")));
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new Info { Title = "TImetable API", Version = "v1" });

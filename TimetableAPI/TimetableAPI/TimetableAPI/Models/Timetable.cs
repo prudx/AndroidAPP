@@ -18,10 +18,10 @@ namespace TimetableAPI.Models
         public Calendar Calendar { get; set; }
 
         [ForeignKey("Calendar_Id")]
-        public DateTime CaledarDate { get; set; }
+        public int Calendar_Id { get; set; }
 
         [ForeignKey("Room_Id")]
-        public int Room_no { get; set; }
+        public int Room_Id { get; set; }
 
     }
 }

@@ -4,7 +4,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace TimetableAPI.Migrations
 {
-    public partial class Timetable : Migration
+    public partial class AzureMigration : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -45,10 +45,9 @@ namespace TimetableAPI.Migrations
                         .Annotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn),
                     StartTime = table.Column<DateTime>(nullable: false),
                     EndTime = table.Column<DateTime>(nullable: false),
-                    Room_Id = table.Column<int>(nullable: true),
                     CalendarClaendar_Id = table.Column<int>(nullable: true),
-                    CaledarDate = table.Column<DateTime>(nullable: false),
-                    Room_no = table.Column<int>(nullable: false)
+                    Calendar_Id = table.Column<int>(nullable: false),
+                    Room_Id = table.Column<int>(nullable: false)
                 },
                 constraints: table =>
                 {
@@ -64,7 +63,7 @@ namespace TimetableAPI.Migrations
                         column: x => x.Room_Id,
                         principalTable: "Room",
                         principalColumn: "Room_Id",
-                        onDelete: ReferentialAction.Restrict);
+                        onDelete: ReferentialAction.Cascade);
                 });
 
             migrationBuilder.CreateIndex(

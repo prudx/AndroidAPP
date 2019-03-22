@@ -57,15 +57,13 @@ namespace TimetableAPI.Migrations
                         .ValueGeneratedOnAdd()
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<DateTime>("CaledarDate");
-
                     b.Property<int?>("CalendarClaendar_Id");
+
+                    b.Property<int>("Calendar_Id");
 
                     b.Property<DateTime>("EndTime");
 
-                    b.Property<int?>("Room_Id");
-
-                    b.Property<int>("Room_no");
+                    b.Property<int>("Room_Id");
 
                     b.Property<DateTime>("StartTime");
 
@@ -86,7 +84,8 @@ namespace TimetableAPI.Migrations
 
                     b.HasOne("TimetableAPI.Models.Room", "Room")
                         .WithMany()
-                        .HasForeignKey("Room_Id");
+                        .HasForeignKey("Room_Id")
+                        .OnDelete(DeleteBehavior.Cascade);
                 });
 #pragma warning restore 612, 618
         }
