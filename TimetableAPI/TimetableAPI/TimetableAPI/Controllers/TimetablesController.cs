@@ -46,23 +46,23 @@ namespace TimetableAPI.Controllers
         }
         public Timetable Timetable { get; set; }
 
-        [HttpGet("{roomIn}")]
-        public async Task<IActionResult> OnGetAsync(int? roomIn)
-        {
-            if (roomIn == null)
-            {
-                return NotFound();
-            }
+        //[HttpGet("{roomIn}")]
+        //public async Task<IActionResult> OnGetAsync(int? roomIn)
+        //{
+        //    if (roomIn == null)
+        //    {
+        //        return NotFound();
+        //    }
 
-            Timetable = await _context.Timetable.
-                 FirstOrDefaultAsync(m => m.Room.Room_no == roomIn);
+        //    Timetable = await _context.Timetable.
+        //         FirstOrDefaultAsync(m => m.Room.Room_no == roomIn);
 
-            if (Timetable == null)
-            {
-                return NotFound();
-            }
-            return Ok(Timetable);
-        }
+        //    if (Timetable == null)
+        //    {
+        //        return NotFound();
+        //    }
+        //    return Ok(Timetable);
+        //}
 
 
         // GET: api/Timetables/5
