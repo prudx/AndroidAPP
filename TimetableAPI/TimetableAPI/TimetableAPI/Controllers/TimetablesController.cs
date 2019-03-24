@@ -34,13 +34,13 @@ namespace TimetableAPI.Controllers
         }
 
 
-        [HttpGet("{roomNo}")]
+        [HttpGet("rooms/{roomNo}")]
         public IEnumerable<Timetable> GetByRoomNo(int? roomNo)
         {
             
-            var room = _context.Rooms;
-            
-            var rooms = _context.Timetable.Include(t => t.Room).ThenInclude(r => r.Room_no == roomNo).ToList();
+            var room = _context.Timetable.Include(p => p.Room).Include(c => c.Calendar).ToList();
+
+            var rooms = room.Where(p => p.Room.Room_no == roomNo);
             return rooms;
 
         }
