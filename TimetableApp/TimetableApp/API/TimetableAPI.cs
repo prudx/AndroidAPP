@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Threading.Tasks;
 using QuickType;
 using Refit;
@@ -17,14 +18,20 @@ namespace TimetableApp.API
             https://jsonplaceholder.typicode.com/users
 
         */
+        
 
-        [Get("/api/Timetables/rooms")]
+        [Get("/api/Timetables")]
         Task<List<Welcome>> GetAllRooms();
 
         //api/Timetable/room#/today
-        [Get("/api/Timetables/{roomid}")]
-        Task<Welcome> GetRoom(int roomid);
+        [Get("/api/Timetables/rooms/{roomid}")]
+        Task<List<Welcome>> GetRoom(int roomid);
 
+        //api/Timetable/227/Monday
+        [Get("/api/Timetables/{roomid}/{day}")]
+        Task<List<Welcome>> GetRoomOnDay(int roomid, string day);
+
+        //used for testing json from jsonplaceholder.com/users
         [Get("/users")]
         Task<List<Welcome>> GetUser();
 

@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-
 using Android.App;
 using Android.Content;
+using Android.Graphics;
 using Android.OS;
 using Android.Runtime;
 using Android.Views;
@@ -24,12 +24,16 @@ namespace TimetableApp.Resources.adapter
         }
 
         private Activity activity;
-        List<Welcome> timetable;
+        private List<Welcome> timetable;
+        private string busy;
+        private string free;
 
-        public ListView_TimetableAdapter(Activity ac, List<Welcome> t)
+        public ListView_TimetableAdapter(Activity ac, List<Welcome> t, string b, string f)
         {
             this.activity = ac;
             this.timetable = t;
+            busy = b;
+            free = f;
         }
 
 
@@ -50,8 +54,32 @@ namespace TimetableApp.Resources.adapter
             var Time = view.FindViewById<TextView>(Resource.Id.time);
             var BusyStatus = view.FindViewById<TextView>(Resource.Id.busyStatus);
 
-            Time.Text = timetable[position].StartTime.Hour.ToString();
-            BusyStatus.Text = timetable[position].Room.Description;
+            
+            if (timetable[position].StartTime.Hour == 12)
+            {   //pm
+                Time.Text = timetable[position].StartTime.Hour.ToString() + "pm";
+            }
+            else if (timetable[position].StartTime.Hour > 12)
+            {   //pm
+                int time = (int)timetable[position].StartTime.Hour - 12;
+                Time.Text = time.ToString() + "pm";
+            }
+            else
+            {   //am
+                Time.Text = timetable[position].StartTime.Hour.ToString() + "am";
+            }
+
+            //decide free or busy
+            if(timetable[position].Room.isBusy == true)
+            {
+                BusyStatus.Text = free;
+                BusyStatus.SetBackgroundColor(Color.LightGreen);
+            }
+            else
+            {
+                BusyStatus.Text = busy;
+                BusyStatus.SetBackgroundColor(Color.MediumVioletRed);
+            }
 
             return view;
         }

@@ -61,11 +61,19 @@ namespace TimetableApp.API
         }
 
         /// <inheritdoc />
-        Task<Welcome> ITimetableAPI.GetRoom(int roomid)
+        Task<List<Welcome>> ITimetableAPI.GetRoom(int roomid)
         {
             var arguments = new object[] { roomid };
             var func = requestBuilder.BuildRestResultFuncForMethod("GetRoom", new Type[] { typeof(int) });
-            return (Task<Welcome>)func(Client, arguments);
+            return (Task<List<Welcome>>)func(Client, arguments);
+        }
+
+        /// <inheritdoc />
+        Task<List<Welcome>> ITimetableAPI.GetRoomOnDay(int roomid,string day)
+        {
+            var arguments = new object[] { roomid,day };
+            var func = requestBuilder.BuildRestResultFuncForMethod("GetRoomOnDay", new Type[] { typeof(int),typeof(string) });
+            return (Task<List<Welcome>>)func(Client, arguments);
         }
 
         /// <inheritdoc />

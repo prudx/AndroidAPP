@@ -2,6 +2,8 @@ EDMTDialog
 Newtonsoft.Json
 Plugin.Connectivity.Abstractions
 Plugin.Connectivity
+Plugin.Multilingual.Abstractions
+Plugin.Multilingual
 Refit
 System.Runtime
 Xamarin.Android.Arch.Core.Common

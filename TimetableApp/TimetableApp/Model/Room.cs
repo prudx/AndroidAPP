@@ -15,7 +15,7 @@ namespace TimetableApp.Model
         [JsonProperty("room_no")]
         public int Room_no { get; set; }
 
-        [JsonProperty("description")]
-        public string Description { get; set; }
+        [JsonProperty("isBusy")]
+        public bool isBusy { get; set; }
     }
 }

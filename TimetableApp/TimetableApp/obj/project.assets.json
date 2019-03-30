@@ -26,6 +26,17 @@
           "lib/netstandard2.0/Newtonsoft.Json.dll": {}
         }
       },
+      "Plugin.Multilingual/1.0.2": {
+        "type": "package",
+        "compile": {
+          "lib/MonoAndroid10/Plugin.Multilingual.Abstractions.dll": {},
+          "lib/MonoAndroid10/Plugin.Multilingual.dll": {}
+        },
+        "runtime": {
+          "lib/MonoAndroid10/Plugin.Multilingual.Abstractions.dll": {},
+          "lib/MonoAndroid10/Plugin.Multilingual.dll": {}
+        }
+      },
       "Refit/4.6.99": {
         "type": "package",
         "dependencies": {
@@ -375,6 +386,64 @@
         "lib/portable-net45+win8+wp8+wpa81/Newtonsoft.Json.xml",
         "newtonsoft.json.12.0.1.nupkg.sha512",
         "newtonsoft.json.nuspec"
+      ]
+    },
+    "Plugin.Multilingual/1.0.2": {
+      "sha512": "xf74OLz0KRWKTkFbFGnefL9ISqNjxbGg4Zgp4W3Uda6QiUMFe/WvBfYPcox/m8d3yiza9t9BryCyzpNU8ivk/g==",
+      "type": "package",
+      "path": "plugin.multilingual/1.0.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "content/net45/Helpers/TranslateExtension.txt.pp",
+        "content/netstandard1.0/Helpers/TranslateExtension.txt.pp",
+        "lib/MonoAndroid10/Plugin.Multilingual.Abstractions.dll",
+        "lib/MonoAndroid10/Plugin.Multilingual.Abstractions.pdb",
+        "lib/MonoAndroid10/Plugin.Multilingual.Abstractions.xml",
+        "lib/MonoAndroid10/Plugin.Multilingual.XML",
+        "lib/MonoAndroid10/Plugin.Multilingual.dll",
+        "lib/MonoAndroid10/Plugin.Multilingual.pdb",
+        "lib/UAP10/Plugin.Multilingual.Abstractions.dll",
+        "lib/UAP10/Plugin.Multilingual.Abstractions.pdb",
+        "lib/UAP10/Plugin.Multilingual.Abstractions.xml",
+        "lib/UAP10/Plugin.Multilingual.XML",
+        "lib/UAP10/Plugin.Multilingual.dll",
+        "lib/UAP10/Plugin.Multilingual.pdb",
+        "lib/UAP10/Plugin.Multilingual.pri",
+        "lib/Xamarin.Mac20/Plugin.Multilingual.Abstractions.dll",
+        "lib/Xamarin.Mac20/Plugin.Multilingual.Abstractions.pdb",
+        "lib/Xamarin.Mac20/Plugin.Multilingual.Abstractions.xml",
+        "lib/Xamarin.Mac20/Plugin.Multilingual.dll",
+        "lib/Xamarin.iOS10/Plugin.Multilingual.Abstractions.dll",
+        "lib/Xamarin.iOS10/Plugin.Multilingual.Abstractions.pdb",
+        "lib/Xamarin.iOS10/Plugin.Multilingual.Abstractions.xml",
+        "lib/Xamarin.iOS10/Plugin.Multilingual.XML",
+        "lib/Xamarin.iOS10/Plugin.Multilingual.dll",
+        "lib/XamarinTVOS/Plugin.Multilingual.Abstractions.dll",
+        "lib/XamarinTVOS/Plugin.Multilingual.Abstractions.dll.mdb",
+        "lib/XamarinTVOS/Plugin.Multilingual.Abstractions.pdb",
+        "lib/XamarinTVOS/Plugin.Multilingual.Abstractions.xml",
+        "lib/XamarinTVOS/Plugin.Multilingual.dll",
+        "lib/XamarinTVOS/Plugin.Multilingual.pdb",
+        "lib/XamarinWatchOS/Plugin.Multilingual.Abstractions.dll",
+        "lib/XamarinWatchOS/Plugin.Multilingual.Abstractions.dll.mdb",
+        "lib/XamarinWatchOS/Plugin.Multilingual.Abstractions.pdb",
+        "lib/XamarinWatchOS/Plugin.Multilingual.Abstractions.xml",
+        "lib/XamarinWatchOS/Plugin.Multilingual.dll",
+        "lib/XamarinWatchOS/Plugin.Multilingual.pdb",
+        "lib/net45/Plugin.Multilingual.Abstractions.dll",
+        "lib/net45/Plugin.Multilingual.Abstractions.pdb",
+        "lib/net45/Plugin.Multilingual.Abstractions.xml",
+        "lib/net45/Plugin.Multilingual.dll",
+        "lib/net45/Plugin.Multilingual.pdb",
+        "lib/netstandard1.0/Plugin.Multilingual.Abstractions.dll",
+        "lib/netstandard1.0/Plugin.Multilingual.Abstractions.pdb",
+        "lib/netstandard1.0/Plugin.Multilingual.Abstractions.xml",
+        "lib/netstandard1.0/Plugin.Multilingual.deps.json",
+        "lib/netstandard1.0/Plugin.Multilingual.dll",
+        "lib/netstandard1.0/Plugin.Multilingual.xml",
+        "plugin.multilingual.1.0.2.nupkg.sha512",
+        "plugin.multilingual.nuspec"
       ]
     },
     "Refit/4.6.99": {
@@ -1001,6 +1070,7 @@
     "MonoAndroid,Version=v8.1": [
       "EDMTDialog >= 1.0.2",
       "Newtonsoft.Json >= 12.0.1",
+      "Plugin.Multilingual >= 1.0.2",
       "Refit >= 4.6.99",
       "Xam.Plugin.Connectivity >= 3.2.0",
       "Xamarin.Android.Support.Design >= 28.0.0.1"
@@ -1012,11 +1082,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\dnlma\\Desktop\\TimetableApp\\TimetableApp\\TimetableApp.csproj",
+      "projectUniqueName": "C:\\Users\\dnlma\\Desktop\\Timetable\\TimetableApp\\TimetableApp\\TimetableApp.csproj",
       "projectName": "TimetableApp",
-      "projectPath": "C:\\Users\\dnlma\\Desktop\\TimetableApp\\TimetableApp\\TimetableApp.csproj",
+      "projectPath": "C:\\Users\\dnlma\\Desktop\\Timetable\\TimetableApp\\TimetableApp\\TimetableApp.csproj",
       "packagesPath": "C:\\Users\\dnlma\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\dnlma\\Desktop\\TimetableApp\\TimetableApp\\obj\\",
+      "outputPath": "C:\\Users\\dnlma\\Desktop\\Timetable\\TimetableApp\\TimetableApp\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "configFilePaths": [
@@ -1046,6 +1116,10 @@
           "Newtonsoft.Json": {
             "target": "Package",
             "version": "[12.0.1, )"
+          },
+          "Plugin.Multilingual": {
+            "target": "Package",
+            "version": "[1.0.2, )"
           },
           "Refit": {
             "target": "Package",

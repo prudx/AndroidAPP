@@ -33,7 +33,7 @@
 			android:layout_width="match_parent"
 			android:layout_height="fill_parent"
 			android:layout_weight="1"
-			android:paddingTop="60dp"
+			android:paddingTop="55dp"
 			android:paddingBottom="60dp"
 			android:clipToPadding="false"
 		/>
@@ -52,7 +52,7 @@
 			android:layout_height="wrap_content"
 			android:layout_weight="1"
 			android:layout_gravity="bottom|start"
-			android:hint="Enter room number"
+			android:hint="@+string/inputHint"
 			android:paddingLeft="10dp"
 		/>
 

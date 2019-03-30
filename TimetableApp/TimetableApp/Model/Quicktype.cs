@@ -62,8 +62,8 @@ namespace QuickType
         [JsonProperty("room_no")]
         public long RoomNo { get; set; }
 
-        [JsonProperty("description")]
-        public string Description { get; set; }
+        [JsonProperty("isBusy")]
+        public bool isBusy { get; set; }
     }
 
     public partial class Welcome

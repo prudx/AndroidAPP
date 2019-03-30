@@ -24,7 +24,7 @@ namespace TimetableApp
     [Activity(Label = "@string/app_name", Theme = "@style/AppTheme.NoActionBar", MainLauncher = true)]
     public class MainActivity : AppCompatActivity
     {
-        public enum AlertType { Error, Load }
+        public enum AlertType { Error, Load, Info }
         ITimetableAPI timetableAPI;
         EditText editText;
         string queryString;
@@ -32,12 +32,17 @@ namespace TimetableApp
         ListView listTimetable;
         FloatingActionButton fab;
         AlertDialog dialog;
-
+        string DayToSearch;
+     
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
             SetContentView(Resource.Layout.activity_main);
+
+            var infoMessage = Resources.GetText(Resource.String.infoMessage);
+            var infoTitle = Resources.GetText(Resource.String.infoTitle);
+            CreateAlert(AlertType.Info, infoMessage, infoTitle);
 
             Android.Support.V7.Widget.Toolbar toolbar 
                 = FindViewById<Android.Support.V7.Widget.Toolbar>(Resource.Id.toolbar);
@@ -49,11 +54,13 @@ namespace TimetableApp
             fab = FindViewById<FloatingActionButton>(Resource.Id.fab);
             fab.Click += FabOnClick;
             
-
             //update query string to the edit text box
             editText = FindViewById<EditText>(Resource.Id.queryInput);
             editText.TextChanged += (object sender, Android.Text.TextChangedEventArgs e) => {
                 queryString = e.Text.ToString();
+
+                if(queryString.Length == 0)     //reset to avoid triggering room not found alert later
+                    queryString = null;
 
                 try                     //trys to convert to int for later usage
                 {
@@ -61,63 +68,140 @@ namespace TimetableApp
                 }
                 catch
                 {
-                    Toast.MakeText(this, "Please enter a number", ToastLength.Long).Show();
+                    var inputError = Resources.GetText(Resource.String.inputError);
+                    Toast.MakeText(this, inputError, ToastLength.Long).Show();
                 }
+
             };
 
             //initiate API connection
             timetableAPI = RestService.For<ITimetableAPI>("https://timetablescheduler.azurewebsites.net");
+            DayToSearch = DateTime.Now.DayOfWeek.ToString();  //set current day variable
+            
         }
+
+
+
 
         //search button press
         private async void FabOnClick(object sender, EventArgs eventArgs)
         {
+            //fetch localized strings (these get passed to adapters)
+            var busy = Resources.GetText(Resource.String.busy);
+            var free = Resources.GetText(Resource.String.free);
+
             try
             {
                 CloseKeyboard();
                 if (!CrossConnectivity.Current.IsConnected)     //connection check, to see if worth calling API
                 {
-                    CreateAlert(AlertType.Error, "No internet connection.");
+                    var errorConnectionMessage = Resources.GetText(Resource.String.errorConnectionMessage);
+                    var errorConnectionTitle = Resources.GetText(Resource.String.errorConnectionTitle);
+                    CreateAlert(AlertType.Error, errorConnectionMessage, errorConnectionTitle);
                     return;
                 }
 
-                if (queryString == null)                        //type of search
+                List<Welcome> results = new List<Welcome>();
+                //API SEARCH ALL ROOM NUMBERS AND SHOW IF FREE NOW
+                if (queryString == null)        
                 {
-                    CreateAlert(AlertType.Load, "Searching for all rooms");                 
-                }
-                else
-                {
-                    CreateAlert(AlertType.Load, "Searching for room "+queryString);
-                }
+                    var searchAll = Resources.GetText(Resource.String.searchAll);
+                    CreateAlert(AlertType.Load, searchAll, ""); //type of search
+                    results = await timetableAPI.GetAllRooms();
+                    var roomOrder = results.OrderBy(c => c.Room.RoomNo);         //sort by room num using LINQ
+                    results = roomOrder.ToList();
 
-                //API SEARCH ALL
-                List<Welcome> results = await timetableAPI.GetAllRooms();
-                var roomOrder = results.OrderBy(c => c.StartTime);          //sort by start time
-                results = roomOrder.ToList();
+                    List<int> roomNum = new List<int>();           //used to further refine and add to below list
+                    List<int> roomNumOrdered = new List<int>();
+                    List<bool> isRoomBusy = new List<bool>();
 
-                //API SEARCH ROOM SPECIFIC
-                if (queryString != null)            //wont be reached if blank query
-                {
-                    foreach (Welcome r in results)
+                    //get unique room numbers
+                    foreach (Welcome result in results)
                     {
-                        var roomSpecific = results.Where(c => c.Room.RoomNo == queryInt);
-                        results = roomSpecific.ToList();
+                        if (!roomNum.Contains((int)result.Room.RoomNo))
+                        {
+                            roomNum.Add((int)result.Room.RoomNo);
+                        }
+                    }
+
+                    //sort by room where has a timetable for right now
+                    var orderByTimeNow = results
+                                            .OrderBy(c => c.Room.RoomNo)
+                                            .Where(c => c.StartTime.Day.ToString() == DayToSearch &&        
+                                                        c.StartTime.Hour == DateTime.UtcNow.Hour);
+                                        
+                    results = orderByTimeNow.ToList();
+
+                    //if true, labs have timetables scheduled for right now
+                    if (results.Count != 0)
+                    {
+                        for (int i = 0; i < roomNum.Count; i++)
+                        {
+                            foreach (Welcome result in results)
+                            {
+                                if (result.Room.RoomNo == roomNum[i])
+                                {
+                                    //we add to the lists similtaniously to keep the pair in order
+                                    roomNumOrdered.Add((int)result.Room.RoomNo);
+                                    isRoomBusy.Add(result.Room.isBusy);             
+                                }
+                            }
+                        }
+
+                        for (int i = 0; i < roomNum.Count; i++)
+                        {
+                            //for rooms not already in the list
+                            if (!roomNumOrdered.Contains(roomNum[i]))
+                            {
+                                roomNumOrdered.Add(roomNum[i]);
+                                isRoomBusy.Add(false);              
+                            }
+                        }
+                    }
+                    //no timetable data == the room is definetly free
+                    else
+                    {
+                        for (int i = 0; i < roomNum.Count; i++)
+                        {
+                            roomNumOrdered.Add(roomNum[i]);
+                            isRoomBusy.Add(false);
+                        }
+                    }
+
+                    //create list of room nums and their status + pass localized busy & free strings to adapter
+                    
+                    var adapterRoomNum = new ListView_RoomNumAdapter(this, roomNumOrdered, isRoomBusy, busy, free);
+                    listTimetable.Adapter = adapterRoomNum;
+
+                    if (dialog.IsShowing)
+                        dialog.Dismiss();
+                    return;
+                }
+                else if (queryString != null)   //GET specific room timetable for TODAY
+                {
+                    var searchSpecificRoom1 = Resources.GetText(Resource.String.searchSpecificRoom1);
+                    var searchSpecificRoom2 = Resources.GetText(Resource.String.searchSpecificRoom2);
+                    CreateAlert(AlertType.Load, searchSpecificRoom1 +" " +queryString +searchSpecificRoom2 +" " + DayToSearch, "");
+                    results = await timetableAPI.GetRoomOnDay(queryInt, DayToSearch);             
+                    var roomOrder = results.OrderBy(c => c.StartTime.Hour);      //sort by start time using LINQ 
+                    results = roomOrder.ToList();
+
+                    if (results.Count == 0)      //if room doesn't exist, display alert
+                    {
+                        dialog.Dismiss();
+                        var errorRoomNotExistMessage = Resources.GetText(Resource.String.errorRoomNotExistMessage);
+                        var errorRoomNotExistTitle = Resources.GetText(Resource.String.errorRoomNotExistTitle);
+                        CreateAlert(AlertType.Error, errorRoomNotExistMessage, errorRoomNotExistTitle);
+                        return;
                     }
                 }
                 
-
-                //Console.WriteLine(results[0].Room.RoomNo);
-                //Console.WriteLine(results[6].Room.RoomNo);
-
-
-                var adapter = new ListView_TimetableAdapter(this, results);
+                var adapter = new ListView_TimetableAdapter(this, results, busy, free);
                 listTimetable.Adapter = adapter;
                 
 
                 if (dialog.IsShowing)
                     dialog.Dismiss();
-
-
             }
             catch (Exception ex)
             {
@@ -143,8 +227,39 @@ namespace TimetableApp
         public override bool OnOptionsItemSelected(IMenuItem item)
         {
             int id = item.ItemId;
-            if (id == Resource.Id.action_settings)
+            if (id == Resource.Id.action_monday)
             {
+                DayToSearch = DayOfWeek.Monday.ToString();
+                return true;
+            }
+            else if (id == Resource.Id.action_tuesday)
+            {
+                DayToSearch = DayOfWeek.Tuesday.ToString();
+                return true;
+            }
+            else if (id == Resource.Id.action_wednesday)
+            {
+                DayToSearch = DayOfWeek.Wednesday.ToString();
+                return true;
+            }
+            else if (id == Resource.Id.action_thursday)
+            {
+                DayToSearch = DayOfWeek.Thursday.ToString();
+                return true;
+            }
+            else if (id == Resource.Id.action_friday)
+            {
+                DayToSearch = DayOfWeek.Friday.ToString();
+                return true;
+            }
+            else if (id == Resource.Id.action_saturday)
+            {
+                DayToSearch = DayOfWeek.Saturday.ToString();
+                return true;
+            }
+            else if (id == Resource.Id.action_sunday)
+            {
+                DayToSearch = DayOfWeek.Sunday.ToString();
                 return true;
             }
 
@@ -152,13 +267,13 @@ namespace TimetableApp
         }
 
         //Alert handler to improve code cleanliness
-        public AlertDialog CreateAlert(AlertType type, string alertMessage)
+        public AlertDialog CreateAlert(AlertType type, string alertMessage, string alertTitle)
         {
             if(type == AlertType.Error)
             {
                 AlertDialog.Builder dialogConnection = new AlertDialog.Builder(this);
                 dialog = dialogConnection.Create();
-                dialog.SetTitle("Connection Error");
+                dialog.SetTitle(alertTitle);
                 dialog.SetMessage(alertMessage);  
             }
             else if (type == AlertType.Load)
@@ -168,7 +283,19 @@ namespace TimetableApp
                     .SetMessage(alertMessage)
                     .Build();
             }
-            
+            else if (type == AlertType.Info)
+            {
+                AlertDialog.Builder dialogConnection = new AlertDialog.Builder(this);
+                var btnOk = Resources.GetText(Resource.String.btnOk);
+                dialogConnection.SetPositiveButton(btnOk, (senderAlert, args) => {
+                    dialogConnection.Dispose();
+                });
+                dialog = dialogConnection.Create();
+                dialog.SetTitle(alertTitle);
+                dialog.SetMessage(alertMessage);
+                dialog.SetCanceledOnTouchOutside(true);
+            }
+
             dialog.Show();
 
             return dialog;
@@ -181,7 +308,7 @@ namespace TimetableApp
             InputMethodManager imm = (InputMethodManager)GetSystemService(Context.InputMethodService);
             imm.HideSoftInputFromWindow(view.WindowToken, 0);
         }
-	}
+    }
 }
 
 /*  code hell
