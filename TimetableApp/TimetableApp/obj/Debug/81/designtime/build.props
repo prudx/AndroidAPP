@@ -19,6 +19,6 @@ TargetFrameworkVersion=v8.1
 AndroidCreatePackagePerAbi=
 OS=Windows_NT
 DesignTimeBuild=true
-AndroidIncludeDebugSymbols=True
+AndroidIncludeDebugSymbols=False
 AdbTarget=
 AdbOptions=

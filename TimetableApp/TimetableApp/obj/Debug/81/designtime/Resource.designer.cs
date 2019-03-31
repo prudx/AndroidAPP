@@ -1962,20 +1962,20 @@ namespace TimetableApp
 			// aapt resource value: 0x7F04006F
 			public const int dialogPreferredPadding = 2130968687;
 			
-			// aapt resource value: 0x7F100004
-			public const int DialogSpotColor = 2131755012;
+			// aapt resource value: 0x7F110004
+			public const int DialogSpotColor = 2131820548;
 			
-			// aapt resource value: 0x7F100005
-			public const int DialogSpotCount = 2131755013;
+			// aapt resource value: 0x7F110005
+			public const int DialogSpotCount = 2131820549;
 			
 			// aapt resource value: 0x7F040070
 			public const int dialogTheme = 2130968688;
 			
-			// aapt resource value: 0x7F100002
-			public const int DialogTitleAppearance = 2131755010;
+			// aapt resource value: 0x7F110002
+			public const int DialogTitleAppearance = 2131820546;
 			
-			// aapt resource value: 0x7F100003
-			public const int DialogTitleText = 2131755011;
+			// aapt resource value: 0x7F110003
+			public const int DialogTitleText = 2131820547;
 			
 			// aapt resource value: 0x7F040071
 			public const int displayOptions = 2130968689;
@@ -2834,14 +2834,14 @@ namespace TimetableApp
 			// aapt resource value: 0x7F060026
 			public const int button_material_light = 2131099686;
 			
-			// aapt resource value: 0x7F050004
-			public const int colorAccent = 2131034116;
+			// aapt resource value: 0x7F060004
+			public const int colorAccent = 2131099652;
 			
-			// aapt resource value: 0x7F050002
-			public const int colorPrimary = 2131034114;
+			// aapt resource value: 0x7F060002
+			public const int colorPrimary = 2131099650;
 			
-			// aapt resource value: 0x7F050003
-			public const int colorPrimaryDark = 2131034115;
+			// aapt resource value: 0x7F060003
+			public const int colorPrimaryDark = 2131099651;
 			
 			// aapt resource value: 0x7F060027
 			public const int design_bottom_navigation_shadow_color = 2131099687;
@@ -2903,8 +2903,8 @@ namespace TimetableApp
 			// aapt resource value: 0x7F06003A
 			public const int highlighted_text_material_light = 2131099706;
 			
-			// aapt resource value: 0x7F050005
-			public const int ic_launcher_background = 2131034117;
+			// aapt resource value: 0x7F060005
+			public const int ic_launcher_background = 2131099653;
 			
 			// aapt resource value: 0x7F06003B
 			public const int material_blue_grey_800 = 2131099707;
@@ -2993,8 +2993,8 @@ namespace TimetableApp
 			// aapt resource value: 0x7F060057
 			public const int secondary_text_disabled_material_light = 2131099735;
 			
-			// aapt resource value: 0x7F050006
-			public const int spots_dialog_color = 2131034118;
+			// aapt resource value: 0x7F060006
+			public const int spots_dialog_color = 2131099654;
 			
 			// aapt resource value: 0x7F060058
 			public const int switch_thumb_disabled_material_dark = 2131099736;
@@ -3390,8 +3390,8 @@ namespace TimetableApp
 			// aapt resource value: 0x7F080077
 			public const int disabled_alpha_material_light = 2131230839;
 			
-			// aapt resource value: 0x7F060002
-			public const int fab_margin = 2131099650;
+			// aapt resource value: 0x7F070002
+			public const int fab_margin = 2131165186;
 			
 			// aapt resource value: 0x7F080078
 			public const int fastscroll_default_thickness = 2131230840;
@@ -3477,20 +3477,20 @@ namespace TimetableApp
 			// aapt resource value: 0x7F080014
 			public const int notification_top_pad_large_text = 2131230740;
 			
-			// aapt resource value: 0x7F060006
-			public const int progress_margin = 2131099654;
+			// aapt resource value: 0x7F070006
+			public const int progress_margin = 2131165190;
 			
-			// aapt resource value: 0x7F060007
-			public const int progress_width = 2131099655;
+			// aapt resource value: 0x7F070007
+			public const int progress_width = 2131165191;
 			
-			// aapt resource value: 0x7F060003
-			public const int spot_size = 2131099651;
+			// aapt resource value: 0x7F070003
+			public const int spot_size = 2131165187;
 			
-			// aapt resource value: 0x7F060004
-			public const int title_margin = 2131099652;
+			// aapt resource value: 0x7F070004
+			public const int title_margin = 2131165188;
 			
-			// aapt resource value: 0x7F060005
-			public const int title_padding = 2131099653;
+			// aapt resource value: 0x7F070005
+			public const int title_padding = 2131165189;
 			
 			// aapt resource value: 0x7F080094
 			public const int tooltip_corner_radius = 2131230868;
@@ -3802,6 +3802,9 @@ namespace TimetableApp
 			// aapt resource value: 0x7F09005B
 			public const int design_snackbar_background = 2131296347;
 			
+			// aapt resource value: 0x7F010002
+			public const int icon = 2130771970;
+			
 			// aapt resource value: 0x7F09005C
 			public const int navigation_empty_icon = 2131296348;
 			
@@ -3896,8 +3899,8 @@ namespace TimetableApp
 			// aapt resource value: 0x7F0C0002
 			public const int action_divider = 2131492866;
 			
-			// aapt resource value: 0x7F010015
-			public const int action_friday = 2130771989;
+			// aapt resource value: 0x7F020015
+			public const int action_friday = 2130837525;
 			
 			// aapt resource value: 0x7F0C0003
 			public const int action_image = 2131492867;
@@ -3917,26 +3920,26 @@ namespace TimetableApp
 			// aapt resource value: 0x7F0C0011
 			public const int action_mode_close_button = 2131492881;
 			
-			// aapt resource value: 0x7F010011
-			public const int action_monday = 2130771985;
+			// aapt resource value: 0x7F020011
+			public const int action_monday = 2130837521;
 			
-			// aapt resource value: 0x7F010016
-			public const int action_saturday = 2130771990;
+			// aapt resource value: 0x7F020016
+			public const int action_saturday = 2130837526;
 			
-			// aapt resource value: 0x7F010017
-			public const int action_sunday = 2130771991;
+			// aapt resource value: 0x7F020017
+			public const int action_sunday = 2130837527;
 			
 			// aapt resource value: 0x7F0C0004
 			public const int action_text = 2131492868;
 			
-			// aapt resource value: 0x7F010014
-			public const int action_thursday = 2130771988;
+			// aapt resource value: 0x7F020014
+			public const int action_thursday = 2130837524;
 			
-			// aapt resource value: 0x7F010012
-			public const int action_tuesday = 2130771986;
+			// aapt resource value: 0x7F020012
+			public const int action_tuesday = 2130837522;
 			
-			// aapt resource value: 0x7F010013
-			public const int action_wednesday = 2130771987;
+			// aapt resource value: 0x7F020013
+			public const int action_wednesday = 2130837523;
 			
 			// aapt resource value: 0x7F0C0014
 			public const int activity_chooser_view_content = 2131492884;
@@ -3959,8 +3962,8 @@ namespace TimetableApp
 			// aapt resource value: 0x7F0C001A
 			public const int bottom = 2131492890;
 			
-			// aapt resource value: 0x7F010010
-			public const int busyStatus = 2130771984;
+			// aapt resource value: 0x7F020010
+			public const int busyStatus = 2130837520;
 			
 			// aapt resource value: 0x7F0C001B
 			public const int buttonPanel = 2131492891;
@@ -4028,8 +4031,8 @@ namespace TimetableApp
 			// aapt resource value: 0x7F0C002F
 			public const int expand_activities_button = 2131492911;
 			
-			// aapt resource value: 0x7F010005
-			public const int fab = 2130771973;
+			// aapt resource value: 0x7F020005
+			public const int fab = 2130837509;
 			
 			// aapt resource value: 0x7F0C0031
 			public const int fill = 2131492913;
@@ -4058,8 +4061,8 @@ namespace TimetableApp
 			// aapt resource value: 0x7F0C000C
 			public const int info = 2131492876;
 			
-			// aapt resource value: 0x7F010008
-			public const int isBusy = 2130771976;
+			// aapt resource value: 0x7F020008
+			public const int isBusy = 2130837512;
 			
 			// aapt resource value: 0x7F0C000D
 			public const int italic = 2131492877;
@@ -4082,14 +4085,14 @@ namespace TimetableApp
 			// aapt resource value: 0x7F0C0040
 			public const int listMode = 2131492928;
 			
-			// aapt resource value: 0x7F010003
-			public const int listView_Timetable = 2130771971;
+			// aapt resource value: 0x7F020003
+			public const int listView_Timetable = 2130837507;
 			
 			// aapt resource value: 0x7F0C0041
 			public const int list_item = 2131492929;
 			
-			// aapt resource value: 0x7F010019
-			public const int marker_progress = 2130771993;
+			// aapt resource value: 0x7F020019
+			public const int marker_progress = 2130837529;
 			
 			// aapt resource value: 0x7F0C0042
 			public const int masked = 2131492930;
@@ -4106,8 +4109,8 @@ namespace TimetableApp
 			// aapt resource value: 0x7F0C0046
 			public const int multiply = 2131492934;
 			
-			// aapt resource value: 0x7F010018
-			public const int my_text_view = 2130771992;
+			// aapt resource value: 0x7F020018
+			public const int my_text_view = 2130837528;
 			
 			// aapt resource value: 0x7F0C0047
 			public const int navigation_header_container = 2131492935;
@@ -4145,8 +4148,8 @@ namespace TimetableApp
 			// aapt resource value: 0x7F0C0052
 			public const int progress_horizontal = 2131492946;
 			
-			// aapt resource value: 0x7F010004
-			public const int queryInput = 2130771972;
+			// aapt resource value: 0x7F020004
+			public const int queryInput = 2130837508;
 			
 			// aapt resource value: 0x7F0C0053
 			public const int radio = 2131492947;
@@ -4160,11 +4163,11 @@ namespace TimetableApp
 			// aapt resource value: 0x7F0C0015
 			public const int right_side = 2131492885;
 			
-			// aapt resource value: 0x7F010007
-			public const int roomDescription = 2130771975;
+			// aapt resource value: 0x7F020007
+			public const int roomDescription = 2130837511;
 			
-			// aapt resource value: 0x7F010006
-			public const int roomNum = 2130771974;
+			// aapt resource value: 0x7F020006
+			public const int roomNum = 2130837510;
 			
 			// aapt resource value: 0x7F0C0057
 			public const int save_image_matrix = 2131492951;
@@ -4289,8 +4292,8 @@ namespace TimetableApp
 			// aapt resource value: 0x7F0C007D
 			public const int text_input_password_toggle = 2131492989;
 			
-			// aapt resource value: 0x7F010009
-			public const int time = 2130771977;
+			// aapt resource value: 0x7F020009
+			public const int time = 2130837513;
 			
 			// aapt resource value: 0x7F0C001A
 			public const int title = 2131492890;
@@ -4301,8 +4304,8 @@ namespace TimetableApp
 			// aapt resource value: 0x7F0C0083
 			public const int title_template = 2131492995;
 			
-			// aapt resource value: 0x7F010002
-			public const int toolbar = 2130771970;
+			// aapt resource value: 0x7F020002
+			public const int toolbar = 2130837506;
 			
 			// aapt resource value: 0x7F0C0084
 			public const int top = 2131492996;
@@ -4477,11 +4480,11 @@ namespace TimetableApp
 			// aapt resource value: 0x7F0F001A
 			public const int abc_select_dialog_material = 2131689498;
 			
-			// aapt resource value: 0x7F020002
-			public const int activity_main = 2130837506;
+			// aapt resource value: 0x7F030002
+			public const int activity_main = 2130903042;
 			
-			// aapt resource value: 0x7F020003
-			public const int content_main = 2130837507;
+			// aapt resource value: 0x7F030003
+			public const int content_main = 2130903043;
 			
 			// aapt resource value: 0x7F0F001B
 			public const int design_bottom_navigation_item = 2131689499;
@@ -4525,14 +4528,14 @@ namespace TimetableApp
 			// aapt resource value: 0x7F0F0028
 			public const int design_text_input_password_icon = 2131689512;
 			
-			// aapt resource value: 0x7F020004
-			public const int ListView_RoomNum = 2130837508;
+			// aapt resource value: 0x7F030004
+			public const int ListView_RoomNum = 2130903044;
 			
-			// aapt resource value: 0x7F020005
-			public const int ListView_Timetable = 2130837509;
+			// aapt resource value: 0x7F030005
+			public const int ListView_Timetable = 2130903045;
 			
-			// aapt resource value: 0x7F020006
-			public const int my_dialog_layout = 2130837510;
+			// aapt resource value: 0x7F030006
+			public const int my_dialog_layout = 2130903046;
 			
 			// aapt resource value: 0x7F0F0001
 			public const int notification_action = 2131689473;
@@ -4607,8 +4610,8 @@ namespace TimetableApp
 		public partial class Menu
 		{
 			
-			// aapt resource value: 0x7F030002
-			public const int menu_main = 2130903042;
+			// aapt resource value: 0x7F040002
+			public const int menu_main = 2130968578;
 			
 			static Menu()
 			{
@@ -4623,14 +4626,14 @@ namespace TimetableApp
 		public partial class Mipmap
 		{
 			
-			// aapt resource value: 0x7F040002
-			public const int ic_launcher = 2130968578;
+			// aapt resource value: 0x7F050002
+			public const int ic_launcher = 2131034114;
 			
-			// aapt resource value: 0x7F040004
-			public const int ic_launcher_foreground = 2130968580;
+			// aapt resource value: 0x7F050004
+			public const int ic_launcher_foreground = 2131034116;
 			
-			// aapt resource value: 0x7F040003
-			public const int ic_launcher_round = 2130968579;
+			// aapt resource value: 0x7F050003
+			public const int ic_launcher_round = 2131034115;
 			
 			static Mipmap()
 			{
@@ -4732,77 +4735,77 @@ namespace TimetableApp
 			// aapt resource value: 0x7F15001D
 			public const int abc_toolbar_collapse_description = 2132082717;
 			
-			// aapt resource value: 0x7F070007
-			public const int action_friday = 2131165191;
+			// aapt resource value: 0x7F080007
+			public const int action_friday = 2131230727;
 			
-			// aapt resource value: 0x7F070003
-			public const int action_monday = 2131165187;
+			// aapt resource value: 0x7F080003
+			public const int action_monday = 2131230723;
 			
-			// aapt resource value: 0x7F070008
-			public const int action_saturday = 2131165192;
+			// aapt resource value: 0x7F080008
+			public const int action_saturday = 2131230728;
 			
-			// aapt resource value: 0x7F070009
-			public const int action_sunday = 2131165193;
+			// aapt resource value: 0x7F080009
+			public const int action_sunday = 2131230729;
 			
-			// aapt resource value: 0x7F070006
-			public const int action_thursday = 2131165190;
+			// aapt resource value: 0x7F080006
+			public const int action_thursday = 2131230726;
 			
-			// aapt resource value: 0x7F070004
-			public const int action_tuesday = 2131165188;
+			// aapt resource value: 0x7F080004
+			public const int action_tuesday = 2131230724;
 			
-			// aapt resource value: 0x7F070005
-			public const int action_wednesday = 2131165189;
+			// aapt resource value: 0x7F080005
+			public const int action_wednesday = 2131230725;
 			
 			// aapt resource value: 0x7F15001E
 			public const int appbar_scrolling_view_behavior = 2132082718;
 			
-			// aapt resource value: 0x7F070002
-			public const int app_name = 2131165186;
+			// aapt resource value: 0x7F080002
+			public const int app_name = 2131230722;
 			
 			// aapt resource value: 0x7F15001F
 			public const int bottom_sheet_behavior = 2132082719;
 			
-			// aapt resource value: 0x7F070026
-			public const int btnOk = 2131165222;
+			// aapt resource value: 0x7F080026
+			public const int btnOk = 2131230758;
 			
-			// aapt resource value: 0x7F070015
-			public const int busy = 2131165205;
+			// aapt resource value: 0x7F080015
+			public const int busy = 2131230741;
 			
-			// aapt resource value: 0x7F070011
-			public const int busyStatus = 2131165201;
+			// aapt resource value: 0x7F080011
+			public const int busyStatus = 2131230737;
 			
 			// aapt resource value: 0x7F150020
 			public const int character_counter_pattern = 2132082720;
 			
-			// aapt resource value: 0x7F070020
-			public const int errorConnectionMessage = 2131165216;
+			// aapt resource value: 0x7F080020
+			public const int errorConnectionMessage = 2131230752;
 			
-			// aapt resource value: 0x7F070019
-			public const int errorConnectionTitle = 2131165209;
+			// aapt resource value: 0x7F080019
+			public const int errorConnectionTitle = 2131230745;
 			
-			// aapt resource value: 0x7F070021
-			public const int errorRoomNotExistMessage = 2131165217;
+			// aapt resource value: 0x7F080021
+			public const int errorRoomNotExistMessage = 2131230753;
 			
-			// aapt resource value: 0x7F070022
-			public const int errorRoomNotExistTitle = 2131165218;
+			// aapt resource value: 0x7F080022
+			public const int errorRoomNotExistTitle = 2131230754;
 			
-			// aapt resource value: 0x7F070016
-			public const int free = 2131165206;
+			// aapt resource value: 0x7F080016
+			public const int free = 2131230742;
 			
-			// aapt resource value: 0x7F070027
-			public const int hello = 2131165223;
+			// aapt resource value: 0x7F080027
+			public const int hello = 2131230759;
 			
-			// aapt resource value: 0x7F070018
-			public const int infoMessage = 2131165208;
+			// aapt resource value: 0x7F080018
+			public const int infoMessage = 2131230744;
 			
-			// aapt resource value: 0x7F070017
-			public const int infoTitle = 2131165207;
+			// aapt resource value: 0x7F080017
+			public const int infoTitle = 2131230743;
 			
-			// aapt resource value: 0x7F070013
-			public const int inputError = 2131165203;
+			// aapt resource value: 0x7F080013
+			public const int inputError = 2131230739;
 			
-			// aapt resource value: 0x7F070014
-			public const int inputHint = 2131165204;
+			// aapt resource value: 0x7F080014
+			public const int inputHint = 2131230740;
 			
 			// aapt resource value: 0x7F150021
 			public const int password_toggle_content_description = 2132082721;
@@ -4819,17 +4822,17 @@ namespace TimetableApp
 			// aapt resource value: 0x7F150025
 			public const int path_password_strike_through = 2132082725;
 			
-			// aapt resource value: 0x7F070012
-			public const int roomNum = 2131165202;
+			// aapt resource value: 0x7F080012
+			public const int roomNum = 2131230738;
 			
-			// aapt resource value: 0x7F070023
-			public const int searchAll = 2131165219;
+			// aapt resource value: 0x7F080023
+			public const int searchAll = 2131230755;
 			
-			// aapt resource value: 0x7F070024
-			public const int searchSpecificRoom1 = 2131165220;
+			// aapt resource value: 0x7F080024
+			public const int searchSpecificRoom1 = 2131230756;
 			
-			// aapt resource value: 0x7F070025
-			public const int searchSpecificRoom2 = 2131165221;
+			// aapt resource value: 0x7F080025
+			public const int searchSpecificRoom2 = 2131230757;
 			
 			// aapt resource value: 0x7F150026
 			public const int search_menu_title = 2132082726;
@@ -4837,8 +4840,8 @@ namespace TimetableApp
 			// aapt resource value: 0x7F150001
 			public const int status_bar_notification_info_overflow = 2132082689;
 			
-			// aapt resource value: 0x7F070010
-			public const int time = 2131165200;
+			// aapt resource value: 0x7F080010
+			public const int time = 2131230736;
 			
 			static String()
 			{
@@ -4871,17 +4874,17 @@ namespace TimetableApp
 			// aapt resource value: 0x7F160006
 			public const int Animation_Design_BottomSheetDialog = 2132148230;
 			
-			// aapt resource value: 0x7F080002
-			public const int AppTheme = 2131230722;
+			// aapt resource value: 0x7F090002
+			public const int AppTheme = 2131296258;
 			
-			// aapt resource value: 0x7F080004
-			public const int AppTheme_AppBarOverlay = 2131230724;
+			// aapt resource value: 0x7F090004
+			public const int AppTheme_AppBarOverlay = 2131296260;
 			
-			// aapt resource value: 0x7F080003
-			public const int AppTheme_NoActionBar = 2131230723;
+			// aapt resource value: 0x7F090003
+			public const int AppTheme_NoActionBar = 2131296259;
 			
-			// aapt resource value: 0x7F080005
-			public const int AppTheme_PopupOverlay = 2131230725;
+			// aapt resource value: 0x7F090005
+			public const int AppTheme_PopupOverlay = 2131296261;
 			
 			// aapt resource value: 0x7F160007
 			public const int Base_AlertDialog_AppCompat = 2132148231;
@@ -5456,8 +5459,8 @@ namespace TimetableApp
 			// aapt resource value: 0x7F1600C5
 			public const int RtlUnderlay_Widget_AppCompat_ActionButton_Overflow = 2132148421;
 			
-			// aapt resource value: 0x7F080006
-			public const int SpotsDialogDefault = 2131230726;
+			// aapt resource value: 0x7F090006
+			public const int SpotsDialogDefault = 2131296262;
 			
 			// aapt resource value: 0x7F1600C6
 			public const int TextAppearance_AppCompat = 2132148422;
@@ -6067,11 +6070,11 @@ namespace TimetableApp
 			public static int[] ActionBarLayout = new int[] {
 					16842931};
 			
-			// aapt resource value: 0x7F090052
-			public const int ActionBarLayout_android_layout_gravity = 2131296338;
+			// aapt resource value: 0x7F100052
+			public const int ActionBarLayout_android_layout_gravity = 2131755090;
 			
-			// aapt resource value: 0x7F090022
-			public const int ActionBar_background = 2131296290;
+			// aapt resource value: 0x7F100022
+			public const int ActionBar_background = 2131755042;
 			
 			// aapt resource value: 0x1
 			public const int ActionBar_backgroundSplit = 1;
@@ -6160,8 +6163,8 @@ namespace TimetableApp
 			public static int[] ActionMenuItemView = new int[] {
 					16843071};
 			
-			// aapt resource value: 0x7F090054
-			public const int ActionMenuItemView_android_minWidth = 2131296340;
+			// aapt resource value: 0x7F100054
+			public const int ActionMenuItemView_android_minWidth = 2131755092;
 			
 			public static int[] ActionMode = new int[] {
 					2130968626,
@@ -6171,8 +6174,8 @@ namespace TimetableApp
 					2130968847,
 					2130968901};
 			
-			// aapt resource value: 0x7F090056
-			public const int ActionMode_background = 2131296342;
+			// aapt resource value: 0x7F100056
+			public const int ActionMode_background = 2131755094;
 			
 			// aapt resource value: 0x1
 			public const int ActionMode_backgroundSplit = 1;
@@ -6193,8 +6196,8 @@ namespace TimetableApp
 					2130968704,
 					2130968746};
 			
-			// aapt resource value: 0x7F090063
-			public const int ActivityChooserView_expandActivityOverflowButtonDrawable = 2131296355;
+			// aapt resource value: 0x7F100063
+			public const int ActivityChooserView_expandActivityOverflowButtonDrawable = 2131755107;
 			
 			// aapt resource value: 0x1
 			public const int ActivityChooserView_initialActivityCount = 1;
@@ -6208,8 +6211,8 @@ namespace TimetableApp
 					2130968828,
 					2130968829};
 			
-			// aapt resource value: 0x7F090066
-			public const int AlertDialog_android_layout = 2131296358;
+			// aapt resource value: 0x7F100066
+			public const int AlertDialog_android_layout = 2131755110;
 			
 			// aapt resource value: 0x1
 			public const int AlertDialog_buttonPanelSideLayout = 1;
@@ -6240,14 +6243,14 @@ namespace TimetableApp
 					2130968838,
 					2130968839};
 			
-			// aapt resource value: 0x7F090080
-			public const int AppBarLayoutStates_state_collapsed = 2131296384;
+			// aapt resource value: 0x7F100080
+			public const int AppBarLayoutStates_state_collapsed = 2131755136;
 			
 			// aapt resource value: 0x1
 			public const int AppBarLayoutStates_state_collapsible = 1;
 			
-			// aapt resource value: 0x7F090074
-			public const int AppBarLayout_android_background = 2131296372;
+			// aapt resource value: 0x7F100074
+			public const int AppBarLayout_android_background = 2131755124;
 			
 			// aapt resource value: 0x1
 			public const int AppBarLayout_android_keyboardNavigationCluster = 1;
@@ -6265,8 +6268,8 @@ namespace TimetableApp
 					2130968765,
 					2130968766};
 			
-			// aapt resource value: 0x7F090083
-			public const int AppBarLayout_Layout_layout_scrollFlags = 2131296387;
+			// aapt resource value: 0x7F100083
+			public const int AppBarLayout_Layout_layout_scrollFlags = 2131755139;
 			
 			// aapt resource value: 0x1
 			public const int AppBarLayout_Layout_layout_scrollInterpolator = 1;
@@ -6277,8 +6280,8 @@ namespace TimetableApp
 					2130968889,
 					2130968890};
 			
-			// aapt resource value: 0x7F090086
-			public const int AppCompatImageView_android_src = 2131296390;
+			// aapt resource value: 0x7F100086
+			public const int AppCompatImageView_android_src = 2131755142;
 			
 			// aapt resource value: 0x1
 			public const int AppCompatImageView_srcCompat = 1;
@@ -6295,8 +6298,8 @@ namespace TimetableApp
 					2130968887,
 					2130968888};
 			
-			// aapt resource value: 0x7F090091
-			public const int AppCompatSeekBar_android_thumb = 2131296401;
+			// aapt resource value: 0x7F100091
+			public const int AppCompatSeekBar_android_thumb = 2131755153;
 			
 			// aapt resource value: 0x1
 			public const int AppCompatSeekBar_tickMark = 1;
@@ -6316,8 +6319,8 @@ namespace TimetableApp
 					16843117,
 					16842804};
 			
-			// aapt resource value: 0x7F090096
-			public const int AppCompatTextHelper_android_drawableBottom = 2131296406;
+			// aapt resource value: 0x7F100096
+			public const int AppCompatTextHelper_android_drawableBottom = 2131755158;
 			
 			// aapt resource value: 0x1
 			public const int AppCompatTextHelper_android_drawableEnd = 1;
@@ -6347,8 +6350,8 @@ namespace TimetableApp
 					2130968720,
 					2130968869};
 			
-			// aapt resource value: 0x7F090104
-			public const int AppCompatTextView_android_textAppearance = 2131296516;
+			// aapt resource value: 0x7F100104
+			public const int AppCompatTextView_android_textAppearance = 2131755268;
 			
 			// aapt resource value: 0x1
 			public const int AppCompatTextView_autoSizeMaxTextSize = 1;
@@ -6492,8 +6495,8 @@ namespace TimetableApp
 					2130968921,
 					2130968922};
 			
-			// aapt resource value: 0x7F090113
-			public const int AppCompatTheme_actionBarDivider = 2131296531;
+			// aapt resource value: 0x7F100113
+			public const int AppCompatTheme_actionBarDivider = 2131755283;
 			
 			// aapt resource value: 0x1
 			public const int AppCompatTheme_actionBarItemBackground = 1;
@@ -6856,8 +6859,8 @@ namespace TimetableApp
 					2130968753,
 					2130968783};
 			
-			// aapt resource value: 0x7F090233
-			public const int BottomNavigationView_elevation = 2131296819;
+			// aapt resource value: 0x7F100233
+			public const int BottomNavigationView_elevation = 2131755571;
 			
 			// aapt resource value: 0x1
 			public const int BottomNavigationView_itemBackground = 1;
@@ -6876,8 +6879,8 @@ namespace TimetableApp
 					2130968635,
 					2130968636};
 			
-			// aapt resource value: 0x7F090239
-			public const int BottomSheetBehavior_Layout_behavior_hideable = 2131296825;
+			// aapt resource value: 0x7F100239
+			public const int BottomSheetBehavior_Layout_behavior_hideable = 2131755577;
 			
 			// aapt resource value: 0x1
 			public const int BottomSheetBehavior_Layout_behavior_peekHeight = 1;
@@ -6888,8 +6891,8 @@ namespace TimetableApp
 			public static int[] ButtonBarLayout = new int[] {
 					2130968615};
 			
-			// aapt resource value: 0x7F090243
-			public const int ButtonBarLayout_allowStacking = 2131296835;
+			// aapt resource value: 0x7F100243
+			public const int ButtonBarLayout_allowStacking = 2131755587;
 			
 			public static int[] CollapsingToolbarLayout = new int[] {
 					2130968658,
@@ -6909,8 +6912,8 @@ namespace TimetableApp
 					2130968892,
 					2130968902};
 			
-			// aapt resource value: 0x7F090245
-			public const int CollapsingToolbarLayout_collapsedTitleGravity = 2131296837;
+			// aapt resource value: 0x7F100245
+			public const int CollapsingToolbarLayout_collapsedTitleGravity = 2131755589;
 			
 			// aapt resource value: 0x1
 			public const int CollapsingToolbarLayout_collapsedTitleTextAppearance = 1;
@@ -6943,8 +6946,8 @@ namespace TimetableApp
 					2130968760,
 					2130968761};
 			
-			// aapt resource value: 0x7F090262
-			public const int CollapsingToolbarLayout_Layout_layout_collapseMode = 2131296866;
+			// aapt resource value: 0x7F100262
+			public const int CollapsingToolbarLayout_Layout_layout_collapseMode = 2131755618;
 			
 			// aapt resource value: 0x1
 			public const int CollapsingToolbarLayout_Layout_layout_collapseParallaxMultiplier = 1;
@@ -6972,8 +6975,8 @@ namespace TimetableApp
 					16843551,
 					16843173};
 			
-			// aapt resource value: 0x7F090265
-			public const int ColorStateListItem_alpha = 2131296869;
+			// aapt resource value: 0x7F100265
+			public const int ColorStateListItem_alpha = 2131755621;
 			
 			// aapt resource value: 0x1
 			public const int ColorStateListItem_android_alpha = 1;
@@ -6986,8 +6989,8 @@ namespace TimetableApp
 					2130968650,
 					2130968651};
 			
-			// aapt resource value: 0x7F090269
-			public const int CompoundButton_android_button = 2131296873;
+			// aapt resource value: 0x7F100269
+			public const int CompoundButton_android_button = 2131755625;
 			
 			// aapt resource value: 0x1
 			public const int CompoundButton_buttonTint = 1;
@@ -6999,8 +7002,8 @@ namespace TimetableApp
 					2130968754,
 					2130968840};
 			
-			// aapt resource value: 0x7F090273
-			public const int CoordinatorLayout_keylines = 2131296883;
+			// aapt resource value: 0x7F100273
+			public const int CoordinatorLayout_keylines = 2131755635;
 			
 			public static int[] CoordinatorLayout_Layout = new int[] {
 					16842931,
@@ -7011,8 +7014,8 @@ namespace TimetableApp
 					2130968763,
 					2130968764};
 			
-			// aapt resource value: 0x7F090276
-			public const int CoordinatorLayout_Layout_android_layout_gravity = 2131296886;
+			// aapt resource value: 0x7F100276
+			public const int CoordinatorLayout_Layout_android_layout_gravity = 2131755638;
 			
 			// aapt resource value: 0x1
 			public const int CoordinatorLayout_Layout_layout_anchor = 1;
@@ -7040,8 +7043,8 @@ namespace TimetableApp
 					2130968640,
 					2130968879};
 			
-			// aapt resource value: 0x7F090284
-			public const int DesignTheme_bottomSheetDialogTheme = 2131296900;
+			// aapt resource value: 0x7F100284
+			public const int DesignTheme_bottomSheetDialogTheme = 2131755652;
 			
 			// aapt resource value: 0x1
 			public const int DesignTheme_bottomSheetStyle = 1;
@@ -7055,17 +7058,17 @@ namespace TimetableApp
 					0,
 					0};
 			
-			// aapt resource value: 0x7F090004
-			public const int Dialog_DialogSpotColor = 2131296260;
+			// aapt resource value: 0x7F100004
+			public const int Dialog_DialogSpotColor = 2131755012;
 			
-			// aapt resource value: 0x7F090005
-			public const int Dialog_DialogSpotCount = 2131296261;
+			// aapt resource value: 0x7F100005
+			public const int Dialog_DialogSpotCount = 2131755013;
 			
-			// aapt resource value: 0x7F090002
-			public const int Dialog_DialogTitleAppearance = 2131296258;
+			// aapt resource value: 0x7F100002
+			public const int Dialog_DialogTitleAppearance = 2131755010;
 			
-			// aapt resource value: 0x7F090003
-			public const int Dialog_DialogTitleText = 2131296259;
+			// aapt resource value: 0x7F100003
+			public const int Dialog_DialogTitleText = 2131755011;
 			
 			public static int[] DrawerArrowToggle = new int[] {
 					2130968618,
@@ -7077,8 +7080,8 @@ namespace TimetableApp
 					2130968831,
 					2130968882};
 			
-			// aapt resource value: 0x7F090288
-			public const int DrawerArrowToggle_arrowHeadLength = 2131296904;
+			// aapt resource value: 0x7F100288
+			public const int DrawerArrowToggle_arrowHeadLength = 2131755656;
 			
 			// aapt resource value: 0x1
 			public const int DrawerArrowToggle_arrowShaftLength = 1;
@@ -7111,8 +7114,8 @@ namespace TimetableApp
 					2130968816,
 					2130968911};
 			
-			// aapt resource value: 0x7F090297
-			public const int FloatingActionButton_backgroundTint = 2131296919;
+			// aapt resource value: 0x7F100297
+			public const int FloatingActionButton_backgroundTint = 2131755671;
 			
 			// aapt resource value: 0x1
 			public const int FloatingActionButton_backgroundTintMode = 1;
@@ -7120,8 +7123,8 @@ namespace TimetableApp
 			public static int[] FloatingActionButton_Behavior_Layout = new int[] {
 					2130968632};
 			
-			// aapt resource value: 0x7F090306
-			public const int FloatingActionButton_Behavior_Layout_behavior_autoHide = 2131297030;
+			// aapt resource value: 0x7F100306
+			public const int FloatingActionButton_Behavior_Layout_behavior_autoHide = 2131755782;
 			
 			// aapt resource value: 0x2
 			public const int FloatingActionButton_borderWidth = 2;
@@ -7157,8 +7160,8 @@ namespace TimetableApp
 					2130968584,
 					2130968585};
 			
-			// aapt resource value: 0x7F090015
-			public const int FontFamilyFont_android_font = 2131296277;
+			// aapt resource value: 0x7F100015
+			public const int FontFamilyFont_android_font = 2131755029;
 			
 			// aapt resource value: 0x1
 			public const int FontFamilyFont_android_fontStyle = 1;
@@ -7175,8 +7178,8 @@ namespace TimetableApp
 			// aapt resource value: 0x5
 			public const int FontFamilyFont_fontWeight = 5;
 			
-			// aapt resource value: 0x7F090008
-			public const int FontFamily_fontProviderAuthority = 2131296264;
+			// aapt resource value: 0x7F100008
+			public const int FontFamily_fontProviderAuthority = 2131755016;
 			
 			// aapt resource value: 0x1
 			public const int FontFamily_fontProviderCerts = 1;
@@ -7198,8 +7201,8 @@ namespace TimetableApp
 					16843264,
 					2130968729};
 			
-			// aapt resource value: 0x7F090308
-			public const int ForegroundLinearLayout_android_foreground = 2131297032;
+			// aapt resource value: 0x7F100308
+			public const int ForegroundLinearLayout_android_foreground = 2131755784;
 			
 			// aapt resource value: 0x1
 			public const int ForegroundLinearLayout_android_foregroundGravity = 1;
@@ -7218,8 +7221,8 @@ namespace TimetableApp
 					2130968782,
 					2130968826};
 			
-			// aapt resource value: 0x7F090312
-			public const int LinearLayoutCompat_android_baselineAligned = 2131297042;
+			// aapt resource value: 0x7F100312
+			public const int LinearLayoutCompat_android_baselineAligned = 2131755794;
 			
 			// aapt resource value: 0x1
 			public const int LinearLayoutCompat_android_baselineAlignedChildIndex = 1;
@@ -7245,8 +7248,8 @@ namespace TimetableApp
 					16843137,
 					16842996};
 			
-			// aapt resource value: 0x7F090322
-			public const int LinearLayoutCompat_Layout_android_layout_gravity = 2131297058;
+			// aapt resource value: 0x7F100322
+			public const int LinearLayoutCompat_Layout_android_layout_gravity = 2131755810;
 			
 			// aapt resource value: 0x1
 			public const int LinearLayoutCompat_Layout_android_layout_height = 1;
@@ -7267,8 +7270,8 @@ namespace TimetableApp
 					16843436,
 					16843437};
 			
-			// aapt resource value: 0x7F090327
-			public const int ListPopupWindow_android_dropDownHorizontalOffset = 2131297063;
+			// aapt resource value: 0x7F100327
+			public const int ListPopupWindow_android_dropDownHorizontalOffset = 2131755815;
 			
 			// aapt resource value: 0x1
 			public const int ListPopupWindow_android_dropDownVerticalOffset = 1;
@@ -7281,8 +7284,8 @@ namespace TimetableApp
 					16843231,
 					16843156};
 			
-			// aapt resource value: 0x7F090330
-			public const int MenuGroup_android_checkableBehavior = 2131297072;
+			// aapt resource value: 0x7F100330
+			public const int MenuGroup_android_checkableBehavior = 2131755824;
 			
 			// aapt resource value: 0x1
 			public const int MenuGroup_android_enabled = 1;
@@ -7324,8 +7327,8 @@ namespace TimetableApp
 					2130968825,
 					2130968907};
 			
-			// aapt resource value: 0x7F090337
-			public const int MenuItem_actionLayout = 2131297079;
+			// aapt resource value: 0x7F100337
+			public const int MenuItem_actionLayout = 2131755831;
 			
 			// aapt resource value: 0x1
 			public const int MenuItem_actionProviderClass = 1;
@@ -7404,8 +7407,8 @@ namespace TimetableApp
 					2130968805,
 					2130968842};
 			
-			// aapt resource value: 0x7F090361
-			public const int MenuView_android_headerBackground = 2131297121;
+			// aapt resource value: 0x7F100361
+			public const int MenuView_android_headerBackground = 2131755873;
 			
 			// aapt resource value: 0x1
 			public const int MenuView_android_horizontalDivider = 1;
@@ -7443,8 +7446,8 @@ namespace TimetableApp
 					2130968753,
 					2130968783};
 			
-			// aapt resource value: 0x7F090371
-			public const int NavigationView_android_background = 2131297137;
+			// aapt resource value: 0x7F100371
+			public const int NavigationView_android_background = 2131755889;
 			
 			// aapt resource value: 0x1
 			public const int NavigationView_android_fitsSystemWindows = 1;
@@ -7481,11 +7484,11 @@ namespace TimetableApp
 			public static int[] PopupWindowBackgroundState = new int[] {
 					2130968837};
 			
-			// aapt resource value: 0x7F090386
-			public const int PopupWindowBackgroundState_state_above_anchor = 2131297158;
+			// aapt resource value: 0x7F100386
+			public const int PopupWindowBackgroundState_state_above_anchor = 2131755910;
 			
-			// aapt resource value: 0x7F090382
-			public const int PopupWindow_android_popupAnimationStyle = 2131297154;
+			// aapt resource value: 0x7F100382
+			public const int PopupWindow_android_popupAnimationStyle = 2131755906;
 			
 			// aapt resource value: 0x1
 			public const int PopupWindow_android_popupBackground = 1;
@@ -7497,8 +7500,8 @@ namespace TimetableApp
 					2130968790,
 					2130968793};
 			
-			// aapt resource value: 0x7F090388
-			public const int RecycleListView_paddingBottomNoButtons = 2131297160;
+			// aapt resource value: 0x7F100388
+			public const int RecycleListView_paddingBottomNoButtons = 2131755912;
 			
 			// aapt resource value: 0x1
 			public const int RecycleListView_paddingTopNoTitle = 1;
@@ -7516,8 +7519,8 @@ namespace TimetableApp
 					2130968830,
 					2130968836};
 			
-			// aapt resource value: 0x7F090391
-			public const int RecyclerView_android_descendantFocusability = 2131297169;
+			// aapt resource value: 0x7F100391
+			public const int RecyclerView_android_descendantFocusability = 2131755921;
 			
 			// aapt resource value: 0x1
 			public const int RecyclerView_android_orientation = 1;
@@ -7552,14 +7555,14 @@ namespace TimetableApp
 			public static int[] ScrimInsetsFrameLayout = new int[] {
 					2130968747};
 			
-			// aapt resource value: 0x7F090403
-			public const int ScrimInsetsFrameLayout_insetForeground = 2131297283;
+			// aapt resource value: 0x7F100403
+			public const int ScrimInsetsFrameLayout_insetForeground = 2131756035;
 			
 			public static int[] ScrollingViewBehavior_Layout = new int[] {
 					2130968634};
 			
-			// aapt resource value: 0x7F090405
-			public const int ScrollingViewBehavior_Layout_behavior_overlapTop = 2131297285;
+			// aapt resource value: 0x7F100405
+			public const int ScrollingViewBehavior_Layout_behavior_overlapTop = 2131756037;
 			
 			public static int[] SearchView = new int[] {
 					16842970,
@@ -7580,8 +7583,8 @@ namespace TimetableApp
 					2130968848,
 					2130968912};
 			
-			// aapt resource value: 0x7F090407
-			public const int SearchView_android_focusable = 2131297287;
+			// aapt resource value: 0x7F100407
+			public const int SearchView_android_focusable = 2131756039;
 			
 			// aapt resource value: 0x1
 			public const int SearchView_android_imeOptions = 1;
@@ -7636,8 +7639,8 @@ namespace TimetableApp
 					2130968701,
 					2130968780};
 			
-			// aapt resource value: 0x7F090425
-			public const int SnackbarLayout_android_maxWidth = 2131297317;
+			// aapt resource value: 0x7F100425
+			public const int SnackbarLayout_android_maxWidth = 2131756069;
 			
 			// aapt resource value: 0x1
 			public const int SnackbarLayout_elevation = 1;
@@ -7652,8 +7655,8 @@ namespace TimetableApp
 					16843131,
 					2130968803};
 			
-			// aapt resource value: 0x7F090429
-			public const int Spinner_android_dropDownWidth = 2131297321;
+			// aapt resource value: 0x7F100429
+			public const int Spinner_android_dropDownWidth = 2131756073;
 			
 			// aapt resource value: 0x1
 			public const int Spinner_android_entries = 1;
@@ -7683,8 +7686,8 @@ namespace TimetableApp
 					2130968909,
 					2130968910};
 			
-			// aapt resource value: 0x7F090435
-			public const int SwitchCompat_android_textOff = 2131297333;
+			// aapt resource value: 0x7F100435
+			public const int SwitchCompat_android_textOff = 2131756085;
 			
 			// aapt resource value: 0x1
 			public const int SwitchCompat_android_textOn = 1;
@@ -7730,8 +7733,8 @@ namespace TimetableApp
 					16842994,
 					16843087};
 			
-			// aapt resource value: 0x7F090450
-			public const int TabItem_android_icon = 2131297360;
+			// aapt resource value: 0x7F100450
+			public const int TabItem_android_icon = 2131756112;
 			
 			// aapt resource value: 0x1
 			public const int TabItem_android_layout = 1;
@@ -7757,8 +7760,8 @@ namespace TimetableApp
 					2130968867,
 					2130968868};
 			
-			// aapt resource value: 0x7F090454
-			public const int TabLayout_tabBackground = 2131297364;
+			// aapt resource value: 0x7F100454
+			public const int TabLayout_tabBackground = 2131756116;
 			
 			// aapt resource value: 0x1
 			public const int TabLayout_tabContentStart = 1;
@@ -7820,8 +7823,8 @@ namespace TimetableApp
 					2130968720,
 					2130968869};
 			
-			// aapt resource value: 0x7F090471
-			public const int TextAppearance_android_fontFamily = 2131297393;
+			// aapt resource value: 0x7F100471
+			public const int TextAppearance_android_fontFamily = 2131756145;
 			
 			// aapt resource value: 0x1
 			public const int TextAppearance_android_shadowColor = 1;
@@ -7877,8 +7880,8 @@ namespace TimetableApp
 					2130968800,
 					2130968801};
 			
-			// aapt resource value: 0x7F090485
-			public const int TextInputLayout_android_hint = 2131297413;
+			// aapt resource value: 0x7F100485
+			public const int TextInputLayout_android_hint = 2131756165;
 			
 			// aapt resource value: 0x1
 			public const int TextInputLayout_android_textColorHint = 1;
@@ -7956,8 +7959,8 @@ namespace TimetableApp
 					2130968899,
 					2130968900};
 			
-			// aapt resource value: 0x7F090502
-			public const int Toolbar_android_gravity = 2131297538;
+			// aapt resource value: 0x7F100502
+			public const int Toolbar_android_gravity = 2131756290;
 			
 			// aapt resource value: 0x1
 			public const int Toolbar_android_minHeight = 1;
@@ -8055,8 +8058,8 @@ namespace TimetableApp
 					2130968629,
 					2130968630};
 			
-			// aapt resource value: 0x7F090538
-			public const int ViewBackgroundHelper_android_background = 2131297592;
+			// aapt resource value: 0x7F100538
+			public const int ViewBackgroundHelper_android_background = 2131756344;
 			
 			// aapt resource value: 0x1
 			public const int ViewBackgroundHelper_backgroundTint = 1;
@@ -8069,8 +8072,8 @@ namespace TimetableApp
 					16842995,
 					16842994};
 			
-			// aapt resource value: 0x7F090542
-			public const int ViewStubCompat_android_id = 2131297602;
+			// aapt resource value: 0x7F100542
+			public const int ViewStubCompat_android_id = 2131756354;
 			
 			// aapt resource value: 0x1
 			public const int ViewStubCompat_android_inflatedId = 1;
@@ -8078,8 +8081,8 @@ namespace TimetableApp
 			// aapt resource value: 0x2
 			public const int ViewStubCompat_android_layout = 2;
 			
-			// aapt resource value: 0x7F090532
-			public const int View_android_focusable = 2131297586;
+			// aapt resource value: 0x7F100532
+			public const int View_android_focusable = 2131756338;
 			
 			// aapt resource value: 0x1
 			public const int View_android_theme = 1;

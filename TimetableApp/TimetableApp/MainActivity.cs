@@ -15,13 +15,12 @@ using Plugin.Connectivity;
 using QuickType;
 using Refit;
 using TimetableApp.API;
-using TimetableApp.Model;
 using TimetableApp.Resources.adapter;
 using AlertDialog = Android.Support.V7.App.AlertDialog;
 
 namespace TimetableApp
 {
-    [Activity(Label = "@string/app_name", Theme = "@style/AppTheme.NoActionBar", MainLauncher = true)]
+    [Activity(Label = "@string/app_name", Theme = "@style/AppTheme.NoActionBar", Icon = "@drawable/icon", MainLauncher = true)]
     public class MainActivity : AppCompatActivity
     {
         public enum AlertType { Error, Load, Info }
@@ -191,7 +190,7 @@ namespace TimetableApp
                         dialog.Dismiss();
                         var errorRoomNotExistMessage = Resources.GetText(Resource.String.errorRoomNotExistMessage);
                         var errorRoomNotExistTitle = Resources.GetText(Resource.String.errorRoomNotExistTitle);
-                        CreateAlert(AlertType.Error, errorRoomNotExistMessage, errorRoomNotExistTitle);
+                        CreateAlert(AlertType.Error, errorRoomNotExistMessage+" "+DayToSearch, errorRoomNotExistTitle);
                         return;
                     }
                 }

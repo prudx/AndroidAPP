@@ -11,7 +11,6 @@ using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 using QuickType;
-using TimetableApp.Model;
 
 namespace TimetableApp.Resources.adapter
 {

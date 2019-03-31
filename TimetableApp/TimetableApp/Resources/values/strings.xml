@@ -18,11 +18,11 @@
 
 
   <string name="infoTitle">Welcome!</string>
-  <string name="infoMessage">To use this app, either \n\n1. Enter a room number to return todays timetable for that room \n\nOR\n\n2. Leave blank to return all rooms with their availability right now</string>
+  <string name="infoMessage">To use this app, either \n\n1. Enter a room number to return todays timetable for that room, or select a day using the top right menu \n\nOR\n\n2. Leave blank to return all rooms with their availability right now</string>
 
   <string name="errorConnectionTitle">Connection Error</string>
   <string name="errorConnectionMessage">No internet connection.</string>
-  <string name="errorRoomNotExistMessage">Room not found or\nNo scheduled hours.</string>
+  <string name="errorRoomNotExistMessage">Room not found or\nNo scheduled hours for</string>
   <string name="errorRoomNotExistTitle">Search Error</string>
   
   <string name="searchAll">Fetching status of \nall computer labs</string>

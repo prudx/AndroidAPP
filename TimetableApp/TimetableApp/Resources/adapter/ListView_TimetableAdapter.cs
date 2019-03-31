@@ -10,7 +10,7 @@ using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 using QuickType;
-using TimetableApp.Model;
+
 
 namespace TimetableApp.Resources.adapter
 {
@@ -72,13 +72,15 @@ namespace TimetableApp.Resources.adapter
             //decide free or busy
             if(timetable[position].Room.isBusy == true)
             {
-                BusyStatus.Text = free;
-                BusyStatus.SetBackgroundColor(Color.LightGreen);
+                BusyStatus.Text = busy;
+                BusyStatus.SetBackgroundColor(Color.MediumVioletRed);
+
             }
             else
             {
-                BusyStatus.Text = busy;
-                BusyStatus.SetBackgroundColor(Color.MediumVioletRed);
+                BusyStatus.Text = free;
+                BusyStatus.SetBackgroundColor(Color.LightGreen);
+
             }
 
             return view;
